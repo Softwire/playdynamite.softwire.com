@@ -1,0 +1,319 @@
+.instructions {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.instructions .instructions-title {
+  padding: 10px 0 0 13px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
+  color: forestgreen;
+}
+
+.instructions .instructions-scrollable {
+  overflow-y: scroll;
+  padding: 0 0 40px 13px;
+}
+
+.instructions .instructions-scrollable h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  font-weight: bold;
+  color: forestgreen;
+  margin: 1em 0;
+  border-bottom: 1px solid forestgreen;
+  width: fit-content;
+}
+
+.instructions .instructions-scrollable p {
+  font-family: "Courier New", Courier, monospace;
+  color: dimgrey;
+}
+
+.instructions .instructions-scrollable .instructions-editor {
+  padding-left: 15px;
+}
+
+.file-list-green {
+  border-right-color: forestgreen;
+}
+
+.file-list-blue {
+  border-right-color: cornflowerblue;
+}
+
+.file-list-red {
+  border-right-color: indianred;
+}
+
+.file-list {
+  min-width: 275px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  align-items: flex-end;
+  padding-top: 50px;
+  box-sizing: border-box;
+  border-right-width: 2px;
+  border-right-style: solid;
+}
+
+.file-list button {
+  margin: 5px 0 5px 5px;
+  padding: 5px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  background-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-right: none;
+  cursor: pointer;
+}
+
+.file-list button:focus {
+  outline: 0;
+}
+
+.file-list button.green {
+  border-color: yellowgreen;
+}
+
+.file-list button.green:hover, .file-list button.green.selected {
+  border-color: forestgreen;
+  background-color: yellowgreen;
+}
+
+.file-list button.blue {
+  border-color: lightblue;
+}
+
+.file-list button.blue:hover, .file-list button.blue.selected {
+  border-color: cornflowerblue;
+  background-color: lightskyblue;
+}
+
+.file-list button.red {
+  border-color: indianred;
+}
+
+.file-list button.red:hover, .file-list button.red.selected {
+  border-color: darkred;
+  background-color: indianred;
+  color: white;
+}
+
+.file-list .gap {
+  height: 35px;
+}
+
+.editor-window {
+  flex-grow: 1;
+  position: relative;
+}
+
+.editor .editor-title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  border-bottom: 2px solid cornflowerblue;
+}
+
+.editor .editor-title .label-filename {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
+  color: steelblue;
+  padding: 3px;
+}
+
+.editor .editor-title input {
+  font-family: "Courier New", Courier, monospace;
+  padding: 3px;
+  border-radius: 4px;
+  border: 1px solid lightgrey;
+  width: 250px;
+  margin: 0 5px;
+}
+
+.editor .editor-title input.duplicate-file-name {
+  border-color: indianred;
+  outline: none;
+}
+
+.editor .editor-title .duplicate-file-name-warning {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 17px;
+  font-weight: bold;
+  color: indianred;
+  padding: 5px;
+}
+
+.editor .editor-title .spacer {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.editor .editor-title .delete-file {
+  background: none;
+  border: 2px solid indianred;
+  font-family: "Courier New", Courier, monospace;
+  color: darkred;
+  cursor: pointer;
+}
+
+.editor .editor-title .delete-file:hover {
+  background-color: indianred;
+  border-color: darkred;
+  color: white;
+}
+
+.editor.hidden {
+  display: none;
+}
+
+.league-table {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.league-table th {
+  text-align: left;
+}
+
+.league-table th, .league-table td {
+  padding-right: 16px;
+}
+
+.game h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.game a {
+  margin-left: 12px;
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+.game a span {
+  border-bottom: 1px solid cornflowerblue;
+}
+
+.game a:visited {
+  color: cornflowerblue;
+}
+
+.game table {
+  margin-left: 32px;
+}
+
+.game th {
+  text-align: left;
+}
+
+.game th, .game td {
+  font-family: "Courier New", Courier, monospace;
+  padding-right: 16px;
+}
+
+.match-runner {
+  padding: 10px 13px;
+}
+
+.match-runner .match-runner-title {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
+  color: indianred;
+}
+
+.match-runner .match-runner-body-text {
+  font-family: "Courier New", Courier, monospace;
+  color: dimgrey;
+  padding: 15px 0;
+}
+
+.app {
+  height: 100%;
+}
+
+.app .editors {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.app .editors iframe {
+  width: 100%;
+  height: 99%;
+  border: none;
+}
+
+.cut-the-mustard-failed {
+  display: flex;
+  justify-content: center;
+}
+
+.cut-the-mustard-failed .ctm-centre-block {
+  padding: 20px;
+  max-width: 530px;
+  text-align: center;
+}
+
+.cut-the-mustard-failed .ctm-centre-block .ctm-failed-title {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 64px;
+  font-weight: bold;
+  color: indianred;
+}
+
+.cut-the-mustard-failed .ctm-centre-block .ctm-failed-sad-face {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 128px;
+  font-weight: bold;
+  color: darkslategrey;
+  padding-top: 20px;
+}
+
+.cut-the-mustard-failed .ctm-centre-block .ctm-failed-oh-no {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 32px;
+  font-weight: bold;
+  color: dimgrey;
+  padding-top: 40px;
+}
+
+.cut-the-mustard-failed .ctm-centre-block .ctm-failed-explanation {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  color: dimgrey;
+  padding-top: 16px;
+}
+
+.cut-the-mustard-failed .ctm-centre-block .ctm-failed-explanation-detail {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  color: dimgrey;
+  padding-top: 16px;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.react-root {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=compiled-css-autogenerated.css.map */
