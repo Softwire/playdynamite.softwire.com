@@ -36,6 +36,57 @@
   padding-left: 15px;
 }
 
+.sample-opponents {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.sample-opponents .sample-opponents-title {
+  padding: 10px 0 0 13px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-weight: bold;
+  color: forestgreen;
+}
+
+.sample-opponents .sample-opponents-scrollable {
+  overflow-y: scroll;
+  padding: 0 0 40px 13px;
+}
+
+.sample-opponents .sample-opponents-scrollable h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  font-weight: bold;
+  color: forestgreen;
+  margin: 1em 0;
+  width: fit-content;
+}
+
+.sample-opponents .sample-opponents-scrollable h3 a {
+  margin-left: 12px;
+  color: cornflowerblue;
+  text-decoration: none;
+}
+
+.sample-opponents .sample-opponents-scrollable h3 a span {
+  border-bottom: 1px solid cornflowerblue;
+}
+
+.sample-opponents .sample-opponents-scrollable h3 a:visited {
+  color: cornflowerblue;
+}
+
+.sample-opponents .sample-opponents-scrollable p {
+  font-family: "Courier New", Courier, monospace;
+  color: dimgrey;
+}
+
+.sample-opponents .sample-opponents-scrollable .instructions-editor {
+  padding-left: 15px;
+}
+
 .file-list-green {
   border-right-color: forestgreen;
 }
@@ -114,6 +165,12 @@
   position: relative;
 }
 
+.editor {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .editor .editor-title {
   display: flex;
   flex-direction: row;
@@ -170,6 +227,11 @@
   background-color: indianred;
   border-color: darkred;
   color: white;
+}
+
+.editor .editor-pane {
+  flex-grow: 1;
+  position: relative;
 }
 
 .editor.hidden {
